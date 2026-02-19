@@ -17,7 +17,7 @@ export function renderHome() {
     return `
       <a href="#/series/${series.id}" class="series-card fade-in fade-in-delay-${i + 1}" id="series-card-${series.id}">
         <div class="series-card-banner" style="background: ${series.bannerGradient};">
-          ${series.bannerImage ? `<img class="series-card-banner-img" src="${series.bannerImage}" alt="${series.title}" />` : ''}
+          ${series.bannerImage ? `<img class="series-card-banner-img" src="${import.meta.env.BASE_URL}${series.bannerImage.replace(/^\//, '')}" alt="${series.title}" />` : ''}
           <div class="series-card-banner-title">${series.title}</div>
         </div>
         <div class="series-card-body">
