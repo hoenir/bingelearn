@@ -1,11 +1,13 @@
 // BingeLearn — Series data index
 
-import { theLastKingdom } from './the-last-kingdom.js';
-import { rome } from './rome.js';
-import { breakingBad } from './breaking-bad.js';
-import { houseMd } from './house-md.js';
+import theLastKingdom from './the-last-kingdom.json';
+import rome from './rome.json';
+import breakingBad from './breaking-bad.json';
+import houseMd from './house-md.json';
+import bridgerton from './bridgerton.json';
+import inTreatment from './in-treatment.json';
 
-export const allSeries = [theLastKingdom, rome, breakingBad, houseMd];
+export const allSeries = [theLastKingdom, rome, breakingBad, houseMd, bridgerton, inTreatment];
 
 export function getSeriesById(id) {
   return allSeries.find(s => s.id === id);
